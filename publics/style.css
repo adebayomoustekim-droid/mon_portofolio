@@ -1,0 +1,465 @@
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f7f9;
+    color: #222;
+    scroll-behavior: smooth;
+    padding-top: 90px; /* Corrige le problème navbar fixe */
+}
+
+section {
+    scroll-margin-top: 100px; /* évite que la navbar cache les titres */
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero h1 span,
+.hero-icon {
+    color: #0dcaf0;
+}
+
+.hero-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #0dcaf0;
+    margin-bottom: 20px;
+}
+
+.section-desc {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+/* ================= ABOUT ================= */
+.description {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skills {
+    margin-top: 25px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #0dcaf0;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.quote {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+}
+
+/* ================= SERVICES ================= */
+.service-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #0dcaf0;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ================= PROJECTS ================= */
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+/* DETAILS */
+.project-details {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.project-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.project-images img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 80px 0;
+}
+
+.project-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.project-content h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.project-content p.lead {
+    font-size: 18px;
+    color: #555;
+}
+
+.project-content ul {
+    padding-left: 20px;
+}
+
+.project-content ul li {
+    margin-bottom: 8px;
+}
+
+/* 🔥 BOUTON PROJET FIX DEFINITIF */
+.project-content a.btn {
+    display: inline-block;
+    margin-top: 40px !important;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    background: #5e5d5d;
+    color: #fff;
+}
+
+.contact-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.btn-send {
+    background: #0dcaf0;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background: #0bb5d9;
+}
+
+.alert {
+    border-radius: 12px;
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 30px;
+    transition: all 0.35s ease;
+    margin-top: 40px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(15, 76, 92, 0.25);
+}
+
+.card h4 {
+    color: #0f4c5c;
+    font-weight: 700;
+}
+
+.card a {
+    color: #0f4c5c;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #17c3b2;
+}
+
+/* ================= CTA ================= */
+.cta {
+    background: #0dcaf0;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta .btn {
+    margin-top: 20px;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+/* ===== FOOTER STYLE MODERNE ===== */
+
+.footer {
+    background: rgba(0, 0, 0, 0.995);
+    color: #ffffff;
+    padding: 60px 0 30px;
+}
+
+.footer h4,
+.footer h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    color: #cccccc;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.footer-link {
+    color: #cccccc;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00c6ff;
+}
+
+/* ===== LOGOS RESEAUX ===== */
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;   /* 🔥 ESPACE ENTRE LES LOGOS */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    background: #00c6ff;
+    transform: translateY(-5px);
+}
+
+/* ===== BAS DU FOOTER ===== */
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+    color: #bbbbbb;
+}
+/* ===== CONTACT HERO ===== */
+/* ================= HERO ================= */
+
+.contact-hero {
+    height: 60vh;
+    background: linear-gradient( rgba(0,0,0,0.6)),    url('https://png.pngtree.com/background/20250109/original/pngtree-contact-us-message-on-cube-blocks-on-wood-table-copy-space-picture-image_15536693.jpg') center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0 15px;
+}
+
+.contact-hero h1 span {
+    color: #0dcaf0;
+}
+
+.contact-hero .hero-icon {
+    font-size: 3rem;
+    color: #0dcaf0;
+    margin-bottom: 15px;
+}
+
+.contact-hero p.lead {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-hero strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #e0f7fa;
+}
+
+.contact-hero .btn-primary {
+    background-color: #0dcaf0;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-hero .btn-primary:hover {
+    background-color: #0bb5d9;
+    transform: translateY(-3px);
+}
+/* ================= Navbar Glass Premium ================= */
+/* Navbar style */
+.navbar {
+    background: rgba(15, 15, 20, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    transition: all 0.4s ease;
+}
+
+/* Brand */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar-brand span {
+    color: #0dcaf0;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Underline animated */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0dcaf0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #0dcaf0;
+}
+
+/* Bouton Me contacter */
+.btn-contact {
+    background: #0dcaf0;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: #0bb5d9;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+    .btn-contact {
+        margin-left: 0;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+    }
+}
